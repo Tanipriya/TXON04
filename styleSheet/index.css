@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.header-container{
+    display: flex;
+    flex-direction: row;
+    background: #222;
+    color: white;
+    justify-content: space-between;
+    height: 50px;
+    position: top fixed;
+    padding: 15px;
+    width: 100%;
+}
