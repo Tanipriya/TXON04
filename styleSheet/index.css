@@ -379,6 +379,8 @@ body {
     background-color: #212529;
     background-size: cover;
     font-size: 20px;
+    display: flex;
+    flex-wrap: wrap;
     
 }
 .project{
@@ -680,3 +682,71 @@ justify-content: center;
     color: #fff;
   }
   
+
+
+
+.icon-box {
+    padding: 20px 15px;
+    position: relative;
+    overflow: hidden;
+    background: #000000;
+    box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.2);
+    transition: all 0.2s ease-in-out;
+    border-radius: 8px;
+    text-align: center;
+    z-index: 1;
+    width: 350px;
+    height: 300px;
+    margin-left: 20px;
+  }
+  
+.icon-box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 0;
+    transition: ease-in-out 0.3s;
+    z-index: -1;
+  }
+  
+.icon-box:hover::before {
+    background: #d43076;
+    height: 100%;
+    border-radius: 0px;
+  }
+  
+.icon {
+    margin: 0 auto 30px auto;
+    padding-top: 10px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    background: #d43076;
+    transition: all 0.3s ease-in-out;
+  }
+  
+.icon i {
+    font-size: 36px;
+    line-height: 1;
+    color: #fff;
+  }
+  
+.title {
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 18px;
+  }
+  
+.title a {
+    color: #111;
+  }
+  
+.description {
+    font-size: 15px;
+    line-height: 24px;
+    margin-bottom: 0;
+  }
