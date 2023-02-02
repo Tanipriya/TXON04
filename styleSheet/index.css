@@ -422,6 +422,7 @@ body {
   justify-content: center;
   align-items: center;
 }
+
 .services .service-card{
   background-color: #000000;
   width: 350px;
@@ -429,6 +430,15 @@ body {
   padding: 20px;
   margin-left: 1rem;
   text-align: center;
+  margin-top: 20px;
+  box-shadow: 0 0 20px #444547;
+  transition: all 1s ease-out;
+}
+
+.services .service-card:hover{
+  border: 2px solid #f06819;
+  background: #14171b;
+  
 }
 
 .services .service-card h2{
@@ -463,103 +473,103 @@ body {
     display: flex;
     flex-direction: column;
     width: 100%;
-   min-height: 100vh;
+    min-height: 100vh;
     padding: 20px;
     color: #212529;
-    background-color: #ced4da;
+  
     background-size: cover;
     font-size: 20px;
     
 
 }
+.contact-main-heading{
+  color: white;
+  font-size: 40px;
+  margin-left: 15px;
+}
 .contact-heading{
   color: #1baa80;
+  text-align: center;
+  margin-left: 30px;
+  margin-top: 30px;
+  margin-bottom: 40px;
 }
 
 .contact-info{
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-padding: 30px;
-text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 30px;
+  text-align: center;
+  color: #fff;
+  box-shadow: 0 0 20px #444547;
+  background-color: #000000;
+  border-radius: 15px;
+  margin-left: 25px;
+  margin-right: 25px;
 }
-.contact-info-list{
-    
-}
+
 .contact-info-list .fa{
   
   color: #1baa80;
   font-size: 30px;
 }
-/*--bs-blue: #0d6efd;
+.contact-name{
+  flex: 0 0 50%;
+ 
+}
+.query-info{
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+  margin-left: 25px;
+  margin-right: 25px;
+  border-radius: 15px;
+  transition: all 1s ease;
+}
 
-    --bs-indigo: #6610f2;
-    --bs-purple: #6f42c1;
-    --bs-pink: #d63384;
-    --bs-red: #dc3545;
-    --bs-orange: #fd7e14;
-    --bs-yellow: #ffc107;
-    --bs-green: #198754;
-    --bs-teal: #20c997#20c997;
-    --bs-cyan: #0dcaf0;
-    --bs-black: #000;
-    --bs-white: #fff;
-    --bs-gray: #6c757d;
-    --bs-gray-dark: #343a40;
-    --bs-gray-100: #f8f9fa;
-    --bs-gray-200: #e9ecef;
-    --bs-gray-300: #dee2e6;
-    --bs-gray-400: #ced4da;
-    --bs-gray-500: #adb5bd;
-    --bs-gray-600: #6c757d;
-    --bs-gray-700: #495057;
-    --bs-gray-800: #343a40;
-    --bs-gray-900: #212529;
-    --bs-primary: #0d6efd;
-    --bs-secondary: #6c757d;
-    --bs-success: #198754;
-    --bs-info: #0dcaf0;
-    --bs-warning: #ffc107;
-    --bs-danger: #dc3545;
-    --bs-light: #f8f9fa;
-    --bs-dark: #212529;
-    --bs-primary-rgb: 13,110,253;
-    --bs-secondary-rgb: 108,117,125;
-    --bs-success-rgb: 25,135,84;
-    --bs-info-rgb: 13,202,240;
-    --bs-warning-rgb: 255,193,7;
-    --bs-danger-rgb: 220,53,69;
-    --bs-light-rgb: 248,249,250;
-    --bs-dark-rgb: 33,37,41;
-    --bs-white-rgb: 255,255,255;
-    --bs-black-rgb: 0,0,0;
-    --bs-body-color-rgb: 33,37,41;
-    --bs-body-bg-rgb: 255,255,255;
-    --bs-font-sans-serif: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-    --bs-font-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
-    --bs-gradient: linear-gradient(180deg,hsla(0,0%,100%,.15),hsla(0,0%,100%,0));
-    --bs-body-font-family: var(--bs-font-sans-serif);
-    --bs-body-font-size: 1rem;
-    --bs-body-font-weight: 400;
-    --bs-body-line-height: 1.5;
-    --bs-body-color: #212529;
-    --bs-body-bg: #fff;
-    --bs-border-width: 1px;
-    --bs-border-style: solid;
-    --bs-border-color: #dee2e6;
-    --bs-border-color-translucent: rgba(0,0,0,.175);
-    --bs-border-radius: 0.375rem;
-    --bs-border-radius-sm: 0.25rem;
-    --bs-border-radius-lg: 0.5rem;
-    --bs-border-radius-xl: 1rem;
-    --bs-border-radius-2xl: 2rem;
-    --bs-border-radius-pill: 50rem;
-    --bs-link-color: #0d6efd;
-    --bs-link-hover-color: #0a58ca;
-    --bs-code-color: #d63384;
-    --bs-highlight-bg: #fff3cd;
-}*/
+.form-details{
+  width: 100%;
+  background-color: #444547;
+  box-shadow: 0 0 20px #444547;
+  height: 50px;
+  border-radius: 10px;
+}
+.form-textarea{
+  height: 160px;
+  background-color: #444547;
+}
+.form-heading{
+  color: #fff;
+  font-size: 25px;
+  margin-top: 20px;
 
+}
+::placeholder{
+  color: #616161;
+  
+  padding: 10px;
+}
+.send-msg{
+  width: 200px;
+  height: 55px;
+  border: 2px solid #626865;
+  margin-left: 16px;
+  padding: 8px;
+  border-radius: 23px;
+  background-color: #20c997;
+  color: white;
+  box-shadow: 0 0 20px #1e2e4e;
+  font-size: 22px;
+  
+}
+.send-msg:hover{
+  cursor: pointer;
+  background-color: transparent;
+  color: #fff;
+}
 
 #summary {
     padding: 72px 0;
@@ -770,14 +780,15 @@ text-align: center;
     position: relative;
     overflow: hidden;
     background: #000000;
-    box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.2);
+    box-shadow: 0 0 20px #343537;
     transition: all 0.2s ease-in-out;
     border-radius: 8px;
     text-align: center;
     z-index: 1;
     width: 350px;
-    height: 300px;
+    height: 350px;
     margin-left: 20px;
+    margin-bottom: 20px;
    
   }
   
@@ -793,9 +804,10 @@ text-align: center;
   }
   
 .icon-box:hover::before {
-    background: #d43076;
-    height: 100%;
+    background: #305049;
+   height: 100%;
     border-radius: 0px;
+    color: #444547;
    
   }
   
@@ -807,15 +819,17 @@ text-align: center;
     border-radius: 50%;
     width: 60px;
     height: 60px;
-    background: #d43076;
+    background: #20c997;
     transition: all 0.3s ease-in-out;
   }
+ 
   
 .icon i {
     font-size: 36px;
     line-height: 1;
     color: #fff;
   }
+  
   
 .title {
     font-weight: 700;
@@ -829,6 +843,46 @@ text-align: center;
   
 .description {
     font-size: 15px;
-    line-height: 24px;
+    line-height: 30px;
     margin-bottom: 0;
+  
   }
+
+.project-btn{
+  width: 150px;
+  height: 40px;
+ font-weight: 400;
+  background-color: #1e8c6b;
+  border: 2px solid #203051;
+  color: #fff;
+  border-radius: 12px;
+  margin-top: 15px;
+  
+}
+.project-btn:hover{
+  background-color: #fff;
+  color: #222;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+.project-btn:hover::before{
+  background-color: white;
+  color: black;
+}
+.project-btn2{
+  width: 150px;
+  height: 40px;
+ font-weight: 400;
+ font-size: 20px;
+  background-color: #1e8c6b;
+  border: 2px solid #203051;
+  color: #fff;
+  border-radius: 12px;
+  
+}
+.project-btn2:hover{
+  background-color: #fff;
+  color: #222;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
