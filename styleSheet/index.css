@@ -1,14 +1,22 @@
 body {
 
     box-sizing: border-box;
+   
     line-height: 1.5;
 }
 
 * {
+ 
     margin: 0;
     padding: 0;
-    outline: none;
+    box-sizing: border-box;
+    
 
+}
+.bg-container{
+  top: -40px;
+  position: relative;
+  margin: 0;
 }
 
 .main-container {
@@ -16,9 +24,8 @@ body {
     right: 0;
     top: 0;
     background: #212529;
-
+    
 }
-
 
 .right-side {
     min-height: 100vh;
@@ -30,9 +37,7 @@ body {
 }
 
 .section {
-
     min-height: 100vh;
-    display: block;
     opacity: 1;
 
 
@@ -41,7 +46,7 @@ body {
 .container {
     min-width: 1250px;
     width: 100%;
-    margin-top: 0px;
+    top: 0;
 
 }
 
@@ -72,18 +77,23 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-right: 1px solid #f8f9fa;
+    border-right: 1px solid #a4a7a9;
 }
 
 .profile-image {
-    height: 120px;
-    width: 130px;
-    border-radius: 50px;
+    height: 130px;
+    width: 120px;
+    border-radius: 50%;
+   
 }
 
+.aside-name-heading{
+  font-size: 25px;
+  color: #beced7;
+}
 .aside .logo {
     position: absolute;
-    top: 50px;
+    top: 30px;
     text-transform: capitalize;
 }
 
@@ -91,7 +101,7 @@ body {
     display: flex;
     flex-direction: column;
 
-    margin-top: 50px;
+    margin-top: 70px;
 
 }
 
@@ -117,7 +127,7 @@ body {
 
 .social-link {
     position: absolute;
-    bottom: 40px;
+    bottom: 25px;
     margin: 10px;
     color: #adb5bd;
     font-size: 30px;
@@ -134,32 +144,33 @@ body {
     height: 50px;
     border-radius: 20px;
     border: 2px solid #20c997;
-    color: #17eaaa;
+    color: #fff;
     font-size: 20px;
+    font-weight: 500;
     display: inline-block;
-    background-color: transparent;
+    background-color: #1baa80;
     transition: all 0.6s ease;
 }
 
 
-.image {
-    background-image: url("../assets/image/intro-bg.jpg");
+.home-container {
+    background-image: url(../assets/image/work-from-home-1-5186089-1627385675007.jpg);
     background-size: cover;
     height: 100vh;
     width: 100%;
     background-attachment: fixed;
     background-position: center center;
-    position: relative;
     background-repeat: no-repeat;
-    background-size: cover;
+   
 
 
 }
 
-.overplay {
-    background: rgb(0, 0, 0);
+
+.bg-layer {
+    background-color: rgb(0, 0, 0);
     /* Fallback color */
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(75, 72, 63, 0.5);
     color: #fff;
     width: 100%;
     height: 100%;
@@ -173,21 +184,28 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: #fff;
-    font-weight: bold;
+   padding: 20px;
+    line-height: 50px;
+    font-weight: 600;
     font-size: 30px;
-    font-family: 'Times New Roman', Times, serif;
-    position: absolute;
-    padding: 30px;
-    top: 20%;
+    min-height: 100vh;
+  
 
 }
+.home-heading{
+  font-size: calc(28px + 2vw);
+}
 
-.name {
-    font-size: 50px;
-    font-style: italic;
-    font-family: 'clicker script', cursive;
-    color: #20c997;
+.home-title{
+  font-size: 60px;
+  font-weight: 600;
+  
+}
+.span-name {
+    
+    
+    color: #1baa80;
+    font-size: calc(25px + 3vw);
 }
 
 .span-style {
@@ -197,19 +215,27 @@ body {
     color: #20c997;
 }
 
-.scroll-down-arrow {
-    position: absolute;
-    z-index: 3;
-    bottom: 20px;
-    left: 50%;
-    margin-left: -16px;
-    width: 32px;
-    height: 32px;
-    line-height: 32px;
-    font-size: 20px;
-    text-align: center;
-    color: #fff;
+.home_arrow {
+  position: relative;
+  cursor: pointer;
+  margin-top: 85px;
+  transition: all .1s ease-in;
+  animation: ar_down 3s normal linear infinite;
 }
+
+.home_arrow  a{
+  color: white;
+}
+
+.home_arrow  .fa-chevron-down {
+  font-size: 40px;
+}
+.typing{
+  color: #1baa80;
+  font-size: 60px;
+  font-weight: 600;
+}
+
 
 .animated {
     position: relative;
@@ -422,21 +448,25 @@ body {
   justify-content: center;
   align-items: center;
 }
-
+.service-para{
+  font-size: 20px;
+  color: #a3a7ab;
+  padding: ;
+}
 .services .service-card{
   background-color: #000000;
   width: 350px;
-  height: 380px;
+  min-height: 380px;
   padding: 20px;
-  margin-left: 1rem;
+  margin-left: 2rem;
   text-align: center;
-  margin-top: 20px;
+  margin-top: 2rem;
   box-shadow: 0 0 20px #444547;
   transition: all 1s ease-out;
 }
 
 .services .service-card:hover{
-  border: 2px solid #f06819;
+  border: 2px solid #ad5b2c;
   background: #14171b;
   
 }
@@ -488,11 +518,12 @@ body {
   margin-left: 15px;
 }
 .contact-heading{
-  color: #1baa80;
+  color: #eaf7f3;
   text-align: center;
   margin-left: 30px;
   margin-top: 30px;
   margin-bottom: 40px;
+  font-size: 20px;
 }
 
 .contact-info{
@@ -542,7 +573,7 @@ body {
   background-color: #444547;
 }
 .form-heading{
-  color: #fff;
+  color: #20c997;
   font-size: 25px;
   margin-top: 20px;
 
@@ -592,7 +623,18 @@ body {
     justify-content: flex-start;
     align-items: center;
   }
-  
+  .resume__container1{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .resume__container2{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
   .resume__column,
   .skills__column {
     padding: 0 24px;
@@ -629,7 +671,7 @@ body {
     background: #18d26e;
     
     display: block;
-    border: 2px solid #18d26e;
+    border: 1px solid #18d26e;
     
   }
 .circle-dot{
@@ -642,17 +684,20 @@ body {
     border-radius: 50px;
 }
 .card__year {
-    background-color: #20c997;
-    color: #fff;
+    background-color: #11e5a5;
+    color: #222;
     padding: 4.9px 9.1px;
     margin-bottom: 16px;
     font-size: 14px;
     border-radius: 4px;
-    font-weight: 400;
+    font-weight: 500;
     text-align: center;
     display: inline-block;
   }
-  
+  .card__desc{
+    font-size: 15px;
+    line-height: 30px;
+  }
   .card__title {
     color: #dce1e8;
     font-size: 21px;
@@ -664,7 +709,12 @@ body {
     font-size: 16px;
     margin-bottom: 16px;
   }
-  
+.course-style{
+  color: #57957c;
+  font-size: 18px;
+  font-weight: 500;
+
+}
   
   
   @keyframes wd {
@@ -834,7 +884,7 @@ body {
 .title {
     font-weight: 700;
     margin-bottom: 15px;
-    font-size: 18px;
+    font-size: 20px;
   }
   
 .title a {
@@ -885,4 +935,55 @@ body {
   color: #222;
   letter-spacing: 2px;
   font-weight: 500;
+}
+
+
+/*Footer cotainer */
+.footer__container {
+ 
+  padding: 66px 0;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  justify-content: center;
+ background-color: #000000;
+}
+
+.footer__desc,
+.footer__list {
+  padding: 0 12px;
+}
+
+.footer__list {
+  list-style-type: none;
+  display: flex;
+}
+
+.footer__linkItem a {
+  padding: 8px 16px 8px 0px;
+  cursor: pointer;
+  border-right: 1px solid #eaeaea;
+  transition: 0.3s ease-in;
+}
+
+.footer__linkItem a:hover {
+  color: var(--button__color);
+}
+
+.footer__linkItem:last-child a {
+  border: unset;
+  padding: 8px 0 8px 16px;
+}
+
+.footer__link {
+  color: var(--button__color);
+  text-decoration: none;
+  transition: 0.3s ease-in;
+}
+
+.footer__link:hover {
+  color: var(--hoverButton__color);
 }

@@ -20,6 +20,10 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
   <title>Portfolio</title>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"
+    integrity="sha512-BdHyGtczsUoFcEma+MfXc71KJLv/cd+sUsUaYYf2mXpfG/PtBjNXsPo78+rxWjscxUYN2Qr2+DbeGGiJx81ifg=="
+    crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -29,8 +33,8 @@
     <!--sidebar-->
     <aside class="aside">
       <div class="logo">
-        <img src="assets/image/Picsart_22-11-12_12-50-07-851.jpg" class="profile-image">
-        <h5>Tanisha Priya</h5>
+        <img src="assets/image/1 (1).jpeg" class="profile-image">
+        <h5 class="aside-name-heading mt-2 ">Tanisha Priya</h5>
       </div>
       <ul class="nav">
         <li><a href="#Home" class="active"><i class="fa fa-home"></i>Home </a></li>
@@ -58,16 +62,29 @@
       <section class="home right-side section" id="Home">
         <div class="container">
           <div class="row">
-            <div class="portfolio-container image  bg-dark">
-              <h1>Hello, My Name is <span class="name">Tanisha Priya</span></h1>
-              <h2>I am <span>Web Developer</span></h2>
-              <p><span>web Developer, frontend developer, software developer</span>
-                <strong></strong>
-                <span></span>
-              </p>
 
-              <button class="hire-me">Hire Me</button>
-              <div class="overplay"></div>
+
+            <div class=" home-container  bg-dark">
+              <div class="home-container">
+                <div class="bg-layer">
+                  <div class="portfolio-container">
+                    <h1 class="home-heading  mb-3">Hello, My Name is <span class="span-name">Tanisha Priya</span></h1>
+
+                    <h1 class="home_title mb-2"> I am a <span class="typing"></span></h1>
+                   
+                    <button class="hire-me mb-2 mt-3">Hire Me</button>
+
+                    <div class="home_arrow">
+                      <a href="#About" class="scroll-down-arrow smooth-scroll">
+                        <span class="animated">
+                          <i class="fa fa-chevron-down">
+                          </i>
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -75,18 +92,6 @@
       </section>
 
       <!-- Home Section-->
-
-      <!-- drop-down cursor Section-->
-
-      <div>
-        <a href="#About" class="scroll-down-arrow smooth-scroll">
-          <span class="animated">
-            <i class="fa fa-chevron-down">
-            </i>
-          </span>
-        </a>
-      </div>
-      <!-- end drop-down cursor Section-->
 
 
       <section class="about right-side section" id="About">
@@ -101,26 +106,22 @@
             <div class="about-container ">
               <h3 class="mb-2">I'm Tanisha Priya, a <span class="span-style">Web Developer</span></h3>
               <p>
-                I help you build brand for your business at an affordable price. Thousands of clients
-                have
-                procured
-                exceptional results while working with our dedicated team. when an unknown printer took
-                a galley
-                of
-                type
-                and
-                scrambled it to make a type specimen book.
-
-                Delivering work within time and budget which meets client’s requirements is our moto.
-                Lorem Ipsum has been the industry's standard dummy text ever when an unknown printer
-                took a</p>
+                I'm a Frontend Web Developer building the Front-end of Websites and Web Applications that leads to the
+                success of the overall product. Check out some of my work in the Projects section.
+                <br />
+                <br />
+                I'm open to Job opportunities where I can contribute, learn and grow. If you have a good opportunity
+                that matches my
+                skills and experience then don't hesitate to contact me.
+              </p>
             </div>
           </div>
 
           <div class="row">
             <div class="personal-info p-4 pad-15">
 
-              <div class="info-list pad-15">
+              <div class="info-list  pad-15">
+                <h3 style="color: rgb(231, 224, 224); text-align: center;" class="mb-4">Information</h3>
                 <p><span class="info-style">Name:</span> Tanisha Priya</p>
               </div>
               <div class="info-list pad-15">
@@ -137,8 +138,10 @@
 
             <div class="skills p-4 pad-15">
 
-
+              <h3 style="color: rgb(231, 224, 224); text-align: center;" class="mb-3">My Skills</h3>
+             
               <div class="row">
+
                 <div class="skill-list">
                   <h5>HTML </h5>
                   <div class="skill-progress">
@@ -216,7 +219,7 @@
             </div>
           </div>
           <div class="row">
-            <button class=" btn pad-15">Download CV</button>
+            <a href="./assets/Tanisha_2022-12-23-230213.pdf"><button class=" btn pad-15">Download CV</button></a>
             <button class="btn pad-15">Hire Me</button>
           </div>
 
@@ -229,11 +232,11 @@
         <div class="summary__Container right-side ">
           <h2 class="titleBackground">
 
-            <p class="text__overlap">Resume</p>
+            <p class="text__overlap ml-2">Resume</p>
           </h2>
 
           <div class="resume__container">
-            <div class="resume__column">
+            <div class="resume__column col-6">
               <h2 class="resume__title">My Education</h2>
 
 
@@ -242,11 +245,19 @@
                 <p class="card__year">2022 - 2023</p>
                 <h3 class="card__title">Full Stack Developer</h3>
                 <p class="card__subtitle">NxtWave CCBP 4.0</p>
-                <ul class="card__desc">
+                
+                <p class="card__desc">
 
-                  <li>Ready Certification in Full-stack Development</li>
-                  <li>Learn MERN Stack Developer</li>
-                </ul>
+                  >Ready Certification in Full-stack Development <br />
+                  >Learn MERN Stack Developer <br />
+                  <span class="course-style">Frontend:</span>  HTML, CSS, Bootstrap, JavaScript, React.Js <br/>
+                  <spna class="course-style">Backend:</spna> Python, Express, Node.Js
+                  <br />
+                  <span class="course-style">Databases :</span>  SQLite, Mongo DB
+                  <br />
+                  <span class="course-style">Tools: </span>  Git, Github
+                </p>
+
               </div>
               <div class="resume__card">
                 <div class="circle-dot"></div>
@@ -255,8 +266,10 @@
                 <h3 class="card__title">Bachelor Degree</h3>
                 <p class="card__subtitle">RCEW, Jaipur</p>
                 <p class="card__desc">
-                  Lisque persius interesset his et, in quot quidam persequeris
-                  vim, ad mea essent possim iriure.
+                  <span class="course-style"> Course :</span> Electronics and Communication Engineering<br />
+                  <span class="course-style">Year :</span> 2012-2016 <br />
+                  <span class="course-style">Location :</span> Jaipur, Rajasthan
+
                 </p>
               </div>
               <div class="resume__card">
@@ -265,23 +278,32 @@
                 <h3 class="card__title">Intermediate</h3>
                 <p class="card__subtitle">S.J.S College</p>
                 <p class="card__desc">
-                  Lisque persius interesset his et, in quot quidam persequeris
-                  vim, ad mea essent possim iriure.
+                  <span class="course-style"> Subject :</span> Science <br />
+                  <span class="course-style"> Year :</span> 2010- 2012<br />
+                  <span class="course-style"> Location :</span> Patna, Bihar
+                  <br />
+
                 </p>
               </div>
             </div>
 
-            <div class="resume__column">
+            <div class="resume__column col-6">
               <h2 class="resume__title">My Experience</h2>
 
-              <div class="resume__card">
+              <div class="resume__card ">
                 <div class="circle-dot"></div>
                 <p class="card__year">2022 - present</p>
                 <h3 class="card__title">Teaching Assistent</h3>
                 <p class="card__subtitle">NxtWave CCBP 4.0</p>
                 <p class="card__desc">
-                  Lisque persius interesset his et, in quot quidam persequeris
-                  vim, ad mea essent possim iriure.
+                  > Currently, I am working on responsive websites<br />
+                  > In order to solve all the problems, I used HTML, CSS, and Bootstrap languages<br />
+                > Help with problem-solving, finding bugs, and providing solutions with explanations.
+                   <br />
+                   
+                   > Finding the problems and supporting them
+                 
+                  
                 </p>
               </div>
               <div class="resume__card">
@@ -290,8 +312,11 @@
                 <h3 class="card__title">Business Dvelopment Manager</h3>
                 <p class="card__subtitle">IndiaFirst Life Insurance</p>
                 <p class="card__desc">
-                  Lisque persius interesset his et, in quot quidam persequeris
-                  vim, ad mea essent possim iriure.
+                  > Provide Support in Sales of Life Insurance business through bank customers at bank branches across
+                  Provide
+                  assigned locations.<br />
+                  > Customized insurance program to suit individual customers, often covering a variety of risks. <br/>
+                  
                 </p>
               </div>
               <div class="resume__card">
@@ -300,8 +325,9 @@
                 <h3 class="card__title">Senior Relationship Manager</h3>
                 <p class="card__subtitle">Reliance Nippon Life Insurance</p>
                 <p class="card__desc">
-                  Lisque persius interesset his et, in quot quidam persequeris
-                  vim, ad mea essent possim iriure.
+                  > Provide support in Sales of Life Insurance business through direct marketing.<br />
+                  > Sought out new clients and developed clientele by networking to find new customers and generate
+                  lists of prospective clients.
                 </p>
               </div>
             </div>
@@ -323,6 +349,10 @@
           <div class="row">
             <div class="project-container">
               <h1 class="mt-2 mb-3">Projects</h1>
+              <p class=" service-para">Here you will find some of the personal projects that I created with each project
+                containing its own case study. I created all
+                projects by using HTML, CSS, JS and React JS language.
+              </p>
 
               <div class="project mt-4">
 
@@ -330,11 +360,12 @@
                   <div class="icon">
                     <a href="#"> <i class="fa fa-list-alt" aria-hidden="true"></i></a>
                   </div>
-                    <h1 class="title">TODO LIST</h1>
-                    <p class="description">Implemented todo crud operations by using JavaScript event listeners and updated UI dynamically by
-                      using JavaScript DOM operations.
-                    </p>
-                    <button class="project-btn">Click</button>
+                  <h1 class="title">TODO LIST</h1>
+                  <p class="description">Implemented todo crud operations by using JavaScript event listeners and
+                    updated UI dynamically by
+                    using JavaScript DOM operations.
+                  </p>
+                  <button class="project-btn">Click</button>
                 </div>
 
 
@@ -342,21 +373,22 @@
                   <div class="icon">
                     <i class="fa fa-sort-numeric-desc" aria-hidden="true"></i>
                   </div>
-                    <h1  class="title">Guessing Number</h1>
-                    <p class="description">Developed In the above program, the guessNumber function is created where a random number from 
-                      1 to 100 is generated using Math.random() function.</p>
-                    <button class="project-btn">Click</button>
+                  <h1 class="title">Guessing Number</h1>
+                  <p class="description">Developed In the above program, the guessNumber function is created where a
+                    random number from
+                    1 to 100 is generated using Math.random() function.</p>
+                  <button class="project-btn">Click</button>
                 </div>
 
                 <div class="icon-box">
                   <div class="icon">
                     <i class="fa fa-wikipedia-w" aria-hidden="true"></i>
                   </div>
-                    <h1  class="title">Wikipedia</h1>
-                    <p class="description"> Developed custom wikipedia search application where user can search and 
-                      view curated results and can see
-                      detailed explanation in wikipedia by clicking on the specific result</p>
-                    <button class="project-btn">Click</button>
+                  <h1 class="title">Wikipedia</h1>
+                  <p class="description"> Developed custom wikipedia search application where user can search and
+                    view curated results and can see
+                    detailed explanation in wikipedia by clicking on the specific result</p>
+                  <button class="project-btn">Click</button>
                 </div>
               </div>
 
@@ -366,10 +398,10 @@
                   <div class="icon">
                     <i class="fa fa-calculator" aria-hidden="true"></i>
                   </div>
-                    <h1  class="title">Calculator</h1>
-                    <its class="description"> Developed a Calculator using HTML, CSS and JavaScript. 
-                      A calculator is a device that performs addition,
-                      subtraction, multiplication and divisions mathematical calculations. </p>
+                  <h1 class="title">Calculator</h1>
+                  <its class="description"> Developed a Calculator using HTML, CSS and JavaScript.
+                    A calculator is a device that performs addition,
+                    subtraction, multiplication and divisions mathematical calculations. </p>
                     <button class="project-btn2">Click</button>
                 </div>
 
@@ -377,21 +409,22 @@
                   <div class="icon">
                     <i class="fa fa-credit-card" aria-hidden="true"></i>
                   </div>
-                    <h1  class="title">Landing Page</h1>
-                    <p class="description">Developed Online Book Store Landing Page where users can browse through the content, 
-                      videos and images of best seller
-                      books, best frictions book and best year books.</p>
-                    <button class="project-btn">Click</button>
+                  <h1 class="title">Landing Page</h1>
+                  <p class="description">Developed Online Book Store Landing Page where users can browse through the
+                    content,
+                    videos and images of best seller
+                    books, best frictions book and best year books.</p>
+                  <button class="project-btn">Click</button>
                 </div>
 
                 <div class="icon-box">
                   <div class="icon">
                     <i class="fa fa-file" aria-hidden="true"></i>
                   </div>
-                    <h1  class="title">Documentry</h1>
-                    <p class="description">I Developed a technical documentation of C++ using HTML and CSS. 
-                      The webpage has a menu sections that helps to navigate to different sections of the webpage.</p>
-                    <a href=""><button class="project-btn">Click</button></a>
+                  <h1 class="title">Documentry</h1>
+                  <p class="description">I Developed a technical documentation of C++ using HTML and CSS.
+                    The webpage has a menu sections that helps to navigate to different sections of the webpage.</p>
+                  <a href=""><button class="project-btn">Click</button></a>
                 </div>
               </div>
             </div>
@@ -405,10 +438,18 @@
 
               <div class="services mt-4">
 
+
                 <div class="service-card">
                   <a href="#" class="icon-circle"><i class="fa fa-code fa-2x"></i></a>
-                  <h2 class="title">WEB DEVELOPMENT</h2>
-                  <p class="description">i am developing web</p>
+                  <h2 class="title">Frontend Developer</h2>
+                  <p class="description">I like to code things from scratch, and enjoy bringing ideas to life in the
+                    browser.
+                    <br />
+
+                    Languages I used:<br />
+
+                    HTML, CSS, JS, React JS
+                  </p>
                   <button class="project-btn">Click</button>
                 </div>
 
@@ -416,15 +457,22 @@
 
                   <a href="#" class="icon-circle"><i class="fa fa-laptop fa-2x"></i></a>
 
-                  <h2 class="title">WEB DESIGN</h2>
-                  <p class="description">its created by CRUD. CRUD is create read update and delete methods</p>
+                  <h2 class="title">Web Design</h2>
+                  <p class="description">I value simple content structure, clean design patterns, and thoughtful
+                    interactions.<br />
+
+                    Things I enjoy designing: <br />
+
+                    Web, Web, UX, UI, Logos</p>
                   <button class="project-btn">Click</button>
                 </div>
 
                 <div class="service-card">
                   <a href="#" class="icon-circle"><i class="fa fa-picture-o fa-2x"></i></a>
-                  <h2 class="title">RESPONSIVE DESIGN</h2>
-                  <p class="description">its created by CRUD. CRUD is create read update and delete methods</p>
+                  <h2 class="title">Responsive Design</h2>
+                  <p class="description">Responsive layout means that your website fluidly resizes for optimal viewing
+                    regardless of the
+                    screen size or device (desktop computer, laptop, tablet or smart phone). </p>
                   <button class="project-btn">Click</button>
                 </div>
               </div>
@@ -434,14 +482,14 @@
       </section>
 
 
-      <section class="Contact right-side" id="Contact">
+      <section class="Contact right-side " id="Contact">
         <div class="container">
           <div class="row">
 
             <div class="contact-container">
-              <strong class="contact-main-heading">Contact Me</strong>
+              <strong class="contact-main-heading mb-5">CONTACT</strong>
               <div class="contact-queris">
-                <h4 class="contact-heading">Have You Any questions?</h4>
+
               </div>
 
               <div class="contact-info pad-15">
@@ -459,18 +507,20 @@
                 <div class="contact-info-list">
                   <i class="fa fa-envelope" aria-hidden="true"></i>
                   <h5 class="mt-2">Email</h5>
-                  <p>tanisha.priya007@gmail.com</p>
+                  <p>example@gmail.com</p>
                 </div>
                 <div class="contact-info-list">
                   <i class="fa fa-globe" aria-hidden="true"></i>
                   <h5 class="mt-2">Website</h5>
-                  <p>+91 9999999999</p>
+                  <p><a href="About">Portfolio</a></p>
                 </div>
 
               </div>
 
               <div>
                 <div class="contact-queris">
+                  <p class="contact-heading">Feel free to Contact me by submitting the form below and
+                    I will get back to you as soon as possible</p>
                   <h4 class="contact-heading">Send Me a Message</h4>
                 </div>
 
@@ -516,11 +566,12 @@
             </div>
           </div>
 
-        </div>
-        <div>
-          <h1 style="color: white; text-align: center;" class="pb-5">Thank You</h1>
+          <div class="mt-4 mb-3">
+            <h1 style="color: white; text-align: center;">Thank You</h1>
+          </div>
         </div>
       </section>
+
 
 
     </div>
@@ -528,19 +579,7 @@
 
 
 
-  <script>
-    var typing = new Typed(".home__title", {
-      strings: [
-        "I'm Simone Olivia",
-        "I'm a Freelancer.",
-        "I'm a Photographer.",
-        "I'm a Designer.",
-      ],
-      typeSpeed: 150,
-      backSpeed: 80,
-      loop: true,
-    });
-  </script>
+
 </body>
 
 </html>
